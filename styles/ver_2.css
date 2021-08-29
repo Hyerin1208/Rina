@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.slide_wrapper {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+.slides {
+    position: absolute;
+    left: 0;
+    top:0;
+    transition: left 0.5s ease-out;
+    /* 슬라이드 개수와 마진계산 너비. */
+    /* width: 2610px; */
+}
+/* 막내뺴고 float걸어야해서 아래와 같이 */
+.slides li:not(:last-child) {
+    float: left;
+    margin-right: 30px;
+}
+.controls {
+    text-align: center;
+    margin-top: 50px;
+}
+.controls span{
+    /* position: absolute; */
+    background: #333;
+    color:#fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    /* top: 50%;
+    transform: translate(-50%); */
+}
+/* .controls span.prev{right: calc(100% + 50px);}
+.controls span.next{left: calc(100% + 50px);} */
